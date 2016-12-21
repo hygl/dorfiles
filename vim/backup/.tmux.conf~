@@ -1,0 +1,18 @@
+set-option -g status on
+set-option -g status-interval 2
+set-option -g status-utf8 on
+set-option -g status-justify "centre"
+set-option -g status-left-length 60
+set-option -g status-right-length 90
+set -g status-left "#(~/src/git/tmux-powerline/powerline.sh left)"
+set -g status-right "#(~/src/git/tmux-powerline/powerline.sh right)"
+set-window-option -g window-status-current-format "#[fg=colour235, bg=colour27]⮀#[fg=colour255, bg=colour27] #I ⮁ #W #[fg=colour27, bg=colour235]⮀"
+
+#^set -g status-right '#(rainbarf)'
+
+# mOUSE Stuff                                                                   
+setw -g mouse-select-window on
+setw -g mouse-select-pane on
+setw -g mouse-resize-pane on
+
+# source '/Users/phuegelm/.vim/bundle/powerline/powerline/bindings/tmux/powerline.conf'

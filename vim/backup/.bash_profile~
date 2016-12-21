@@ -1,0 +1,15 @@
+export EDITOR='/Applications/jEdit.app/Contents/MacOS/jedit'
+alias jedit='/Applications/jEdit.app/Contents/MacOS/jedit' 
+alias la='ls -laG'
+alias ll='ls -lG'
+alias ls='ls -G'
+alias jsc='/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc'
+#alias hbrew='brew update && brew upgrade && brew cleanup'
+GRADLE_VERSION=1.8
+SPRING_BOOT=0.5.0.M5
+REST_SHELL=-1.2.1.RELEASE
+export PATH=:~/bin:~/Library/Python/2.7/bin:$PATH:~/.gem/bin:~/build/gradle-$GRADLE_VERSION/bin:~/build/spring-$SPRING_BOOT:~/build/rest-shell-$REST_SHELL/bin:~/build/sbt/bin
+##if [ -f `brew --prefix`/etc/bash_completion ]; then
+#  . `brew --prefix`/etc/bash_completion
+#fi
+

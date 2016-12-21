@@ -1,0 +1,69 @@
+\begin{}
+
+\end{}
+
+\Section{Individuelle Entscheidungen}
+
+Bevor eine kollektive Entscheidung getroffen werden kann, muss jeder Teilnehmer erst einmal eine individuelle Entscheidung treffen. In diesem Abschnitt wird kurz in die {\it individuelle Entscheidungsfindung} und die {\it Spieltheorie} eingeführt, zwei Theorien zur nicht-interaktiven Entscheidungsfindung.    
+
+Bevor aber die Theorien erklärt werden, werden kurz ein paar Definitionen getroffen, die im Laufe der Arbeit immer wieder auftachen.
+\subsection{Definitionen}
+
+
+\subsubsection{Eigenschaften von Relationen}
+Grundelegenderes über die Logik findet man im Anhang {\it Entscheidungslogik}. Hier wird nun direkt auf Relationen und Mengen referiert, die im Weiteren Verwendung finden.
+
+Es sei $X$ eine nicht-leere, endliche Menge von Elementen $x,y,z,\ldots$, die die einander ausschliessende Alternativen, über die zu entscheiden ist, darstellen. Es gilt $X={x,y,z,\ldots}$.
+
+Es sei nun auf $X$ eine binäre Relation $R$ definiert. Diese verstehen wir als {\bf schwache Präferenz} $<x,y> \in R$ mit der Interpretation "$x$ wird gegenüber  $y$ vorgezogen oder für indifferent gehalten". Als {\it Kurzschreibweise} wird im Folgenden für die Relation auch $x R y$ benutzt.  
+Diese Relation kann sowohl für einzelne als auch für eine Gruppe von Entscheidern vorhanden sein, da es für die Relation zunächst mal unerheblich ist, ob es sich um eine individuelle oder kollektive Präferenz handelt.
+
+In Anlehnung an die schwache Präferenz lassen sich leicht die {\bf strikte Präferenz} und die {\it Indifferenz} definieren. Die strikte Präferrenz hat die Lesart "$x$ wird gegenüber $y$ strikt vorgezogen".
+
+\begin{definition}
+$<x,y> \in P: \leftrightarrow [<x,y> \in R \vee \not <y,x> \in R]$ 
+\end{definition}
+Die Indifferenz wird als "$x$ wird gegenüber $y$ für indifferent gehalten" gelesen und wird wie folgt defniniert:
+\begin{definition}
+$<x,y> \in P: \leftrightarrow [<x,y> \in R \vee  <y,x> \in R]$
+\end{definition}
+Es gibt zwei Grundlegende Eigenschaften, die an Präferenz Relationen gestellt werden:
+
+\begin{definition}
+{\bf Vollständig} ist eine Relation gdw. gilt: $\forall x,y \in X:[<x, y> \in P \vee <y, x> \in P \vee <x, y> \in I]$ bzw. $\forall x,y \in X:[<x, y> \in R \vee <y, x> \in R$
+\end{definition}
+\begin{definition}
+{\bf Transitiv} ist eine Relation gdw. gilt:  $\forall x,y \in X:[<x, y> \in R \vedge <y, z> R \rightarrow <x ,z> \in R]$]
+\end{definition}   
+
+Zweistellig Relationen, die transitiv und vollständig sind, werden Ordnungsrelationen. Entsprechend halten transitive und vollständige Präferenzrelationen {\bf Präferenzordnungen} oder auch kurz {\bg Ordnungen}.
+
+Präferenzordnung, die vollständig und transitiv sind, sind zugleich reflexiv. Ein enstsprechendes Lemma mit zugehörigem Beweis finde sich z.B. bei Kern und Nida-Rümelin  \cite{Kern:1994mv}. Fehlt jedoch die Eigentschaft der Vollständigkeit, so sind jedoch die Eingenschaften der Reflexivität und Transitivität gegeben, so handelt es sich um {\it Quasiordnungen}. 
+
+\begin{definition}
+Eine Präferenzrelation $R$ ist {\bf antisymetrisch} gdw. gilt: $\forall x, y \in X: [<x,y> \in R \vee <y,x> \in R \rightarrow x = y$
+\end{definition}  
+
+In der Antisymetrie wird Indifferenz durch Gleichheit ersetzt. Ist eine Relation, die antisymetrisch ist, zudem noch reflexiv und transitiv, so ergibt sie eine {\it Partielle Ordnung}, ist sie auch noch vollständig, so ergibt sie eine {\it lineare Ordnung}.
+
+\begin{definition}
+Eine Präferenzrelation $r$ ist {\bf asymetrisch} gdw. gilt: $\forall x, y \in X: [<x,y> \in R \rightarrow <y,x> \notin R]$.  
+\end{definition}
+
+\subsubsection{Auswahlfunktionen}
+
+Es kann bestimmte Situationen geben, in denen ohne eine Präferenzrelation $R$ eine Auswahl aus einer Menge getroffen werden soll. Beispiele dafür, das nur einzelne Elemente aus einer Alternativenmenge genannt werden, ist das jede zu entscheidende Person nur eine Alternative angibt und hieraus die kollektive Entscheidung getroffen wird. oder wenn eine Person weiss, das bestimmte Alternativen aufgrund von individuellen Entscheidungskriterien nicht in Frage kommen und deshalb aus den Alternativen eine Menge bildet, mit den Elementen die überhaupt für die Person in Frage kommen.  
+
+Zur Beschreibung von Alternativen in diesem allgemeinen Fall wird eine {\it allgemeine Auswahlfunktion} eingeführt.
+
+\begin{definition}
+Eine {\bf allgemeine Auswahlfunktion} $a$ ordnet jeder Teilmenge $S$ von $X$ {\bf  beste} Elemente zu, so dass $a: Pot(X) \ni S \mapsto S^{*} \sqsubset S$. Dabei ist $S^{*}$ Die Menge der besten Elemente.
+\end{definition}
+
+Was genau ein bestes Element in $S$ ist, wird also durch die Auswahlfunktion festgeschrieben. $x$ ist genau dann bestes Element in $S$, wenn gilt: $ x \in a(S)$. Das beste Element ist also ein Grundbegriff, $S$ bzw. $a(S)$ wird als {\bf allgemeine Auswahlmenge} von $S$ bezeichnet.
+
+Demgegenüber steht der spezifische Fall, das es eine Präferenzrelation $R$ gibt. Dann wird $s$ aus $X$ bezüglich dieser Päferenzrelation $R$ gebildet. So kann in Analogie zu der asllgemien Auswahlfunktion die {\bf individuelle Auswahlfunktion} definiter werden:
+
+\begin{definition}
+Eine {\bf spezielle Auswahlfunktion} $a_{R}$ ordnet jeder Teilmenge $S$ von $X$ die Menge der {\bf besten} Elemente bezüglich $R$ zu, so dass $a_{R}: Pot(X) \ni S \mapsto A(S,R) \sqsubset S$.
+\end{definition} 

@@ -1,0 +1,7 @@
+
+object hello {
+  def main(args: Array[String]) {
+    var hans = "Peter".reverse
+    println(hans)
+  }
+}

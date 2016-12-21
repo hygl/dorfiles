@@ -1,0 +1,29 @@
+set imap_user = "p.huegelmeyer@googlemail.com"
+set imap_pass = "waldorfstettler"
+
+set smtp_url = "smtp://p.huegelmeyer@smtp.googlemail.com:587/"
+set smtp_pass = "waldrfstettler"
+
+set folder = "imaps://imap.googlemail.com:993"
+set spoolfile = "+INBOX"
+set postponed = "+[Google Mail]/Drafts"
+
+macro index,pager y "<save-message>=[Google<quote-char> Mail]/All<quote-char> Mail<enter><enter>" "Archive"
+# macro index,pager s "<save-message>=[Google<quote-char> Mail]/Spam<enter><enter>" "Spam"
+
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Google<quote-char> Mail]/All<quote-char> Mail<enter>" "Go to all mail"
+macro index gt "<change-folder>=[Google<quote-char> Mail]/Sent<quote-char> Mail<enter>" "Go to sent Mail"
+macro index gd "<change-folder>=[Google<quote-char> Mail]/Drafts<enter>" "Go to drafts"
+macro index gs "<change-folder>=[Google<quote-char> Mail]/Spam<enter>" "Go to Spam"
+
+set imap_keepalive = 900
+set timeout=15
+set mail_check=60
+
+set sort = 'threads'
+set sort_aux = 'last-date-received'
+set charset="utf-8"
+
+set delete = yes
+set move = no
