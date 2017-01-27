@@ -10,7 +10,9 @@ set t_Co=256
 " let g:Powerline_symbols = 'unicode'
 
 " allow backspacing over everything in insert mode
-
+"show statusbar always
+:set laststatus=2
+:set nu
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
