@@ -1,4 +1,0 @@
-# source ~/bin/setjdk
-export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8

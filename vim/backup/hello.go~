@@ -1,8 +1,0 @@
-package main
-import "fmt"
-import "time"
-
-func main(){
-   fmt.Println("Hello, World!")
-   fmt.Println("the time is ", time.now())
- }

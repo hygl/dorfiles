@@ -1,7 +1,0 @@
-FROM php:7.0-cli
-RUN apt-get update && apt-get install -y git &&  rm -rf /var/lib/apt/lists/*
-COPY . /usr/src/app
-WORKDIR /usr/src/app
-RUN php composer.phar create-project slim/slim-skeleton restapi
-WORKDIR /usr/src/app/restapi
-CMD ["php","-S", "0.0.0.0:8080","-t","public" "public/index.php" ]
